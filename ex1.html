@@ -20,14 +20,24 @@
       type="button"
       value="night"
       onclick=" 
-    if (document.querySelector('#night_day').value === 'night') {
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    document.querySelector('#night_day').value = 'day';
+      const target = document.querySelector('body').style ;
+    if (this.value === 'night') {
+
+    target.backgroundColor = 'black';
+    target.color = 'white';
+
+    this.value = 'day';
+
+    document.querySelector('#night_day2').value = 'day' ;
+
   } else {
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black'
-    document.querySelector('#night_day').value = 'night';
+
+    target.backgroundColor = 'white';
+    target.color = 'black'
+
+    this.value = 'night';
+
+    document.querySelector('#night_day2').value = 'night' ;
     } "
     />
 
@@ -45,5 +55,31 @@
       aperiam vero laborum dolores suscipit quidem distinctio architecto. Iusto
       dolorem rem voluptates.
     </p>
+
+    <input
+      id="night_day2"
+      type="button"
+      value="night"
+      onclick=" 
+      const target = document.querySelector('body').style ;
+
+    if (this.value === 'night') {
+
+    target.backgroundColor = 'black';
+    target.color = 'white';
+
+    this.value = 'day';
+
+    document.querySelector('#night_day').value = 'day' ;
+  } else {
+
+    target.backgroundColor = 'white';
+    target.color = 'black'
+
+    this.value = 'night';
+
+    document.querySelector('#night_day').value = 'night' ;
+    } "
+    />
   </body>
 </html>
